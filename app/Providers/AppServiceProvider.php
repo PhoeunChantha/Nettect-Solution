@@ -5,7 +5,7 @@ namespace App\Providers;
 use App\Models\Brand;
 use App\Models\Banner;
 use App\Models\Category;
-use App\Helpers\MailHelper;
+use App\helpers\MailHelper;
 use App\Models\BusinessSetting;
 use Illuminate\Support\Facades\App;
 use Illuminate\Pagination\Paginator;
