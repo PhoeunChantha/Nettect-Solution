@@ -260,9 +260,9 @@ Route::middleware(['auth:user', CheckUserLogin::class, SetSessionData::class])->
         Route::resource('supplier', SupplierController::class);
 
         // pos
-        Route::get('pos', [PosController::class, 'index'])->name('pos');
-        Route::post('/pos-create-customer', [PosController::class, 'pos_customer_store'])->name('pos_customer_store');
-        Route::get('pos/filter', [PosController::class, 'posfilterProducts'])->name('pos-filter-products');
+        // Route::get('pos', [PosController::class, 'index'])->name('pos');
+        // Route::post('/pos-create-customer', [PosController::class, 'pos_customer_store'])->name('pos_customer_store');
+        // Route::get('pos/filter', [PosController::class, 'posfilterProducts'])->name('pos-filter-products');
         Route::post('pos/store', [PosController::class, 'store'])->name('pos_store');
         Route::post('pos/search', [PosController::class, 'search'])->name('pos_search_products');
 
