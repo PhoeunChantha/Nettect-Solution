@@ -263,8 +263,7 @@ Route::middleware(['auth:user', CheckUserLogin::class, SetSessionData::class])->
         // Route::get('pos', [PosController::class, 'index'])->name('pos');
         // Route::post('/pos-create-customer', [PosController::class, 'pos_customer_store'])->name('pos_customer_store');
         // Route::get('pos/filter', [PosController::class, 'posfilterProducts'])->name('pos-filter-products');
-        Route::post('pos/store', [PosController::class, 'store'])->name('pos_store');
-        Route::post('pos/search', [PosController::class, 'search'])->name('pos_search_products');
+      
 
         //invoice
         Route::get('invoice', [InvoiceController::class, 'index'])->name('invoice.index');
@@ -274,7 +273,9 @@ Route::middleware(['auth:user', CheckUserLogin::class, SetSessionData::class])->
         Route::get('/report/report-detail/{id}', [ReportController::class, 'reportDetail'])->name('report.report-detail');
 
         // pos
-        Route::get('/pos', [PosController::class, 'index'])->name('pos.index');
+        Route::get('pos', [PosController::class, 'index'])->name('pos');
+        Route::post('pos/store', [PosController::class, 'store'])->name('pos_store');
+        Route::post('pos/search', [PosController::class, 'search'])->name('pos_search_products');
         Route::post('/pos-create-customer', [PosController::class, 'pos_customer_store'])->name('pos_customer_store');
         Route::get('/pos/filter', [PosController::class, 'posfilterProducts'])->name('pos-filter-products');
         //header

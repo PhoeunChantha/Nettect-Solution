@@ -49,8 +49,8 @@
                 @if (auth()->user()->can('report.view'))
                 @endif
                 <li class="nav-item">
-                    <a href="{{ route('admin.pos.index') }}"
-                        class="nav-link @if (request()->routeIs('admin.pos.index')) active @endif">
+                    <a href="{{ route('admin.pos') }}"
+                        class="nav-link @if (request()->routeIs('admin.pos')) active @endif">
                         <i class="nav-icon fas fa-shopping-cart mr-1"></i>
                         <p>
                             {{ __('POS') }}
