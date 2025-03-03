@@ -53,7 +53,7 @@
         </li>
         <li class="nav-item">
             <a href="{{ route('admin.pos.index') }}"
-                class="nav-link pos-style d-flex align-items-center justify-content-center @if (request()->routeIs('admin.pos')) active @endif">
+                class="nav-link pos-style d-flex align-items-center justify-content-center @if (request()->routeIs('admin.pos.index')) active @endif">
                 <i class="nav-icon fas fa-shopping-cart mr-1"></i>
                 <p class="m-0">
                     {{ __('POS') }}
