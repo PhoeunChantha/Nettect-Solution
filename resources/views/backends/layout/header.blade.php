@@ -51,7 +51,7 @@
                 {{ __('Go to website') }}
             </a>
         </li>
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a href="{{ route('admin.pos.index') }}"
                 class="nav-link pos-style d-flex align-items-center justify-content-center @if (request()->routeIs('admin.pos.index')) active @endif">
                 <i class="nav-icon fas fa-shopping-cart mr-1"></i>
@@ -59,7 +59,7 @@
                     {{ __('POS') }}
                 </p>
             </a>
-        </li>
+        </li> --}}
         {{-- <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
                 <i class="fas fa-headset"></i>

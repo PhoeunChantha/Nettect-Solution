@@ -48,7 +48,15 @@
                 @endif
                 @if (auth()->user()->can('report.view'))
                 @endif
-               
+                <li class="nav-item">
+                    <a href="{{ route('admin.pos.index') }}"
+                        class="nav-link pos-style d-flex align-items-center justify-content-center @if (request()->routeIs('admin.pos.index')) active @endif">
+                        <i class="nav-icon fas fa-shopping-cart mr-1"></i>
+                        <p class="m-0">
+                            {{ __('POS') }}
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-item @if (request()->routeIs('admin.report.*')) menu-is-opening menu-open @endif">
                     <a href="#" class="nav-link @if (request()->routeIs('admin.report.*')) active @endif">
                         <i class="nav-icon fa fas fa-chart-bar"></i>
